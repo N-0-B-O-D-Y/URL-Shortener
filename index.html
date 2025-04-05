@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>minMe - short your problems with Minmi url shortener </title>
+        <link rel="icon" href="./icons/favicon6.png" type = "image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="box1" class="container">
+            <a href="index.html"><h1 class="heading">URL SHORTENER</h1></a>
+            <div id="url-input">
+                <label for="input">
+                    <input type ="text" id ="input" placeholder="Enter the URL here"> <!--onclick="getComputedStyle(document.getElementById('input')).cursor = 'pointer';"-->
+                </label>
+            </div>
+            <input type ='submit' value="Generate" id="submit-btn" class="btn">
+        </div>
+        <div id="box2" class="container hidden">
+            <h2 class="heading">SHORTENED URL</h2>
+            <div class="sub-container">
+                <div id="url-output">Shortened url is</div>
+                <button id="copy-btn">copy</button>
+            </div>
+            <button id="reset-btn" class="btn">New URL</button>
+        </div>
+        <!-- Here we are linking our js file -->
+        <script src ="script.js"></script>
+    </body>
+</html>
